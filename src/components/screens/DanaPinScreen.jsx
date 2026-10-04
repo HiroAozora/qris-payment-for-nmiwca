@@ -81,7 +81,7 @@ export default function DanaPinScreen({ onBack, onSuccess }) {
         </div>
 
         {/* PIN Prompt Header */}
-        <div className="text-center pt-8 px-6">
+        <div className="text-center pt-4 sm:pt-7 px-6">
           <h2 className="text-lg font-bold text-slate-900 tracking-tight">
             Masukkan PIN DANA
           </h2>
@@ -90,7 +90,7 @@ export default function DanaPinScreen({ onBack, onSuccess }) {
           </p>
 
           {/* 6 Digit Indicator Circles */}
-          <div className="flex items-center justify-center gap-4 my-7">
+          <div className="flex items-center justify-center gap-4 my-5 sm:my-7">
             {[0, 1, 2, 3, 4, 5].map((idx) => {
               const isFilled = idx < pin.length;
               return (

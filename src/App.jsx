@@ -22,7 +22,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 0.98 }}
             transition={{ duration: 0.35 }}
-            className="flex-1 flex flex-col w-full h-full"
+            className="flex-1 flex flex-col w-full h-full overflow-hidden"
           >
             <DanaSplashScreen onFinished={() => setScreen('preparing')} />
           </motion.div>
@@ -35,7 +35,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="flex-1 flex flex-col w-full h-full"
+            className="flex-1 flex flex-col w-full h-full overflow-hidden"
           >
             <DanaPreparingSheet onReady={() => setScreen('payment')} />
           </motion.div>
@@ -48,7 +48,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, x: -15 }}
             transition={{ duration: 0.25 }}
-            className="flex-1 flex flex-col w-full h-full"
+            className="flex-1 flex flex-col w-full h-full overflow-hidden"
           >
             <DanaPaymentSheet onBayar={() => setScreen('pin')} />
           </motion.div>
@@ -61,7 +61,7 @@ export default function App() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.25 }}
-            className="flex-1 flex flex-col w-full h-full"
+            className="flex-1 flex flex-col w-full h-full overflow-hidden"
           >
             <DanaPinScreen
               onBack={() => setScreen('payment')}
@@ -77,7 +77,7 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.35 }}
-            className="flex-1 flex flex-col w-full h-full"
+            className="flex-1 flex flex-col w-full h-full overflow-hidden"
           >
             <DanaSuccessScreen onOpenDetail={() => setScreen('video')} />
           </motion.div>
@@ -90,7 +90,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.35 }}
-            className="flex-1 flex flex-col w-full h-full"
+            className="flex-1 flex flex-col w-full h-full overflow-hidden"
           >
             <VideoSurpriseModal onRestart={() => setScreen('splash')} />
           </motion.div>

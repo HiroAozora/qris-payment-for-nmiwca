@@ -62,7 +62,7 @@ export default function VideoSurpriseModal({ onRestart }) {
   };
 
   return (
-    <div className="flex-1 w-full bg-gradient-to-b from-slate-900 via-slate-950 to-black text-white flex flex-col justify-between p-5 select-none relative overflow-y-auto">
+    <div className="flex-1 w-full h-full bg-gradient-to-b from-slate-900 via-slate-950 to-black text-white flex flex-col justify-between p-4 sm:p-5 select-none relative overflow-hidden">
       {/* Background ambient aura */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-rose-500/20 rounded-full blur-3xl pointer-events-none" />
 
@@ -78,7 +78,7 @@ export default function VideoSurpriseModal({ onRestart }) {
       </div>
 
       {/* Video Container Area */}
-      <div className="my-auto py-3 z-10 flex flex-col items-center">
+      <div className="my-auto py-1 sm:py-2 z-10 flex flex-col items-center w-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -86,7 +86,7 @@ export default function VideoSurpriseModal({ onRestart }) {
           className="w-full max-w-sm bg-slate-900/90 rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative"
         >
           {/* Video Player */}
-          <div className="relative aspect-[9/16] max-h-[460px] w-full bg-black flex items-center justify-center overflow-hidden">
+          <div className="relative aspect-[9/16] max-h-[50vh] sm:max-h-[460px] w-full bg-black flex items-center justify-center overflow-hidden">
             <video
               ref={videoRef}
               src={videoSrc}

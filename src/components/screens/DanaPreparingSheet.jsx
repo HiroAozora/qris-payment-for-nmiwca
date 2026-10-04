@@ -75,7 +75,7 @@ export default function DanaPreparingSheet({ onReady }) {
         </div>
 
         {/* Center Spinner Area */}
-        <div className="py-16 px-6 flex flex-col items-center justify-center text-center bg-[#f9fafb]">
+        <div className="py-8 sm:py-12 px-6 flex flex-col items-center justify-center text-center bg-[#f9fafb]">
           {/* Animated Spinner with Card Badge */}
           <div className="relative w-24 h-24 mb-5 flex items-center justify-center">
             {/* Spinning Border */}
