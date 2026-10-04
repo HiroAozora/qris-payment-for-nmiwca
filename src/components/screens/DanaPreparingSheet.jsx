@@ -60,7 +60,7 @@ export default function DanaPreparingSheet({ onReady }) {
                 PT. Hiro Studio
               </h3>
               <p className="text-[11px] text-white/80 font-medium">
-                XENDIT | JAKARTA SELATAN
+                XENDIT | KOTA MEDAN
               </p>
             </div>
           </div>

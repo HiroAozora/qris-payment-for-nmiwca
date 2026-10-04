@@ -59,7 +59,7 @@ export default function DanaPaymentSheet({ onBayar }) {
                 PT. Hiro Studio
               </h3>
               <p className="text-[11px] text-white/80 font-medium">
-                XENDIT | JAKARTA SELATAN
+                XENDIT | KOTA MEDAN
               </p>
             </div>
           </div>
