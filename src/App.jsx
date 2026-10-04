@@ -7,40 +7,13 @@ import DanaPaymentSheet from './components/screens/DanaPaymentSheet';
 import DanaPinScreen from './components/screens/DanaPinScreen';
 import DanaSuccessScreen from './components/screens/DanaSuccessScreen';
 import VideoSurpriseModal from './components/screens/VideoSurpriseModal';
-import { sound } from './utils/sound';
 
 export default function App() {
   // Screen stages: 'splash' -> 'preparing' -> 'payment' -> 'pin' -> 'success' -> 'video'
   const [screen, setScreen] = useState('splash');
-  const [isMuted, setIsMuted] = useState(false);
-
-  const handleToggleMute = () => {
-    const muted = sound.toggleMute();
-    setIsMuted(muted);
-  };
-
-  const getStatusMode = () => {
-    switch (screen) {
-      case 'splash':
-      case 'success':
-        return 'blue';
-      case 'preparing':
-      case 'payment':
-        return 'yellow';
-      case 'video':
-        return 'dark';
-      case 'pin':
-      default:
-        return 'light';
-    }
-  };
 
   return (
-    <PhoneContainer
-      isMuted={isMuted}
-      onToggleMute={handleToggleMute}
-      statusMode={getStatusMode()}
-    >
+    <PhoneContainer>
       <AnimatePresence mode="wait">
         {screen === 'splash' && (
           <motion.div

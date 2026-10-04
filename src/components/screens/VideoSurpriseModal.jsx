@@ -175,11 +175,8 @@ export default function VideoSurpriseModal({ onRestart }) {
           {/* Sweet Caption Below Video */}
           <div className="p-4 bg-slate-900 border-t border-white/10 text-center">
             <h3 className="text-base font-extrabold text-white tracking-tight">
-              Surprise Buat Kamu! ✨
+              imup cekali cayang, cubit ah🤏
             </h3>
-            <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-              Kamu ga beneran bayar apa-apa kok... ini cuma prank kecil dari aku biar kamu senyum hari ini.
-            </p>
           </div>
         </motion.div>
 

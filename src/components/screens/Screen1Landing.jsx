@@ -29,7 +29,7 @@ export default function Screen1Landing({ onNext }) {
               <span className="text-[10px] bg-white/20 font-bold px-1.5 py-0.5 rounded text-white uppercase tracking-wider">
                 Verifikasi
               </span>
-              <span className="text-[11px] text-white/80">PT Komunika Lintas Maya</span>
+              <span className="text-[11px] text-white/80">PT. Hiro Studio</span>
             </div>
             <h1 className="text-base font-bold text-white tracking-tight mt-0.5 leading-snug">
               one tiny thing before you continue.

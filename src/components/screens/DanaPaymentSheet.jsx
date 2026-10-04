@@ -56,7 +56,7 @@ export default function DanaPaymentSheet({ onBayar }) {
             </div>
             <div>
               <h3 className="font-bold text-sm tracking-tight leading-snug">
-                PT Komunika Lintas Maya
+                PT. Hiro Studio
               </h3>
               <p className="text-[11px] text-white/80 font-medium">
                 XENDIT | JAKARTA SELATAN
